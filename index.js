@@ -3,7 +3,6 @@ const { Client, Events, GatewayIntentBits } = require('discord.js');
 // 設定ファイルからトークン情報を呼び出し、変数に保存します
 require("dotenv").config();
 const token = process.env.token;
-// const { token } = require("./config.json");
 // クライアントインスタンスと呼ばれるオブジェクトを作成します
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 
